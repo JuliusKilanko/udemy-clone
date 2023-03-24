@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Mulish', sans-serif;
+}
+.dropdown-menu{
+  position: absolute;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  padding-left: 0;
+  width: 400px;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+.dropdown-menu::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transform: rotate(45deg);
+}
+.dropdown-menu.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+.dropdown-menu.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+.dropdown-menu ul li{
+  padding: 10px  0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu ul li:hover a{
+  color: #2969C4;
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover img{
+  opacity: 1;
+  cursor: pointer;
+}
+.dropdownItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownItem img{
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: var(--speed);
+}
+
+.dropdownItem a{
+  margin-left: 10px;
+  transition: 0.5s ease;
+}
+
+/* Business information cards Design */
+.InfoCards{
+  position: absolute;
+  top: 50px;
+  right: 1px;
+  width: 300px;
+  box-shadow: 0px 0px 2px black;
+  padding: 10px;
+}
+.InfoCards button{
+  background-color: black;
+  color: white;
+  padding: 10px 50px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+.InfoCards::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transform: rotate(45deg);
+}
+.InfoCards.active{
+  opacity: 100%;
+  background-color: white;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+.InfoCards.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+
+
+  /* Teaching Cards Section Design */
+.techCards{
+  position: absolute;
+  top: 50px;
+  right: 1px;
+  width: 300px;
+  box-shadow: 0px 0px 2px black;
+  padding: 10px;
+}
+.techCards button{
+  background-color: black;
+  color: white;
+  padding: 10px 80px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+.techCards::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transform: rotate(45deg);
+}
+.techCards.active{
+  opacity: 100%;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease;
+  background-color: white;
+}
+.techCards.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+
+.custom-design{
+  border-bottom: 1px solid lightgray;
+}
+
+/*LearningDropdown */
+.LearningDropdown{
+  position: absolute;
+  background-color: #fff;
+  padding: 10px 20px;
+  padding-left: 0;
+  width: 350px;
+  top: 50px;
+  right: 0;
+  box-shadow: 0px 0px 2px black;
+  padding-left: 10px;
+}
+.LearningDropdown::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transform: rotate(45deg);
+}
+.LearningDropdown.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+.LearningDropdown.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+
+/*Wishlist Design Section */
+.Wishlist{
+  position: absolute;
+  background-color: #fff;
+  padding: 10px 20px;
+  padding-left: 0;
+  width: 320px;
+  top: 50px;
+  right: 0;
+  box-shadow: 0px 0px 2px black;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.Wishlist::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transform: rotate(45deg);
+}
+.Wishlist.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+.Wishlist.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+
+/*Cart section design */
+.Cart{
+  position: absolute;
+  background-color: #fff;
+  padding: 10px 20px;
+  padding-left: 0;
+  width: 320px;
+  top: 50px;
+  right: 0;
+  box-shadow: 0px 0px 2px black;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.Cart::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transform: rotate(45deg);
+}
+.Cart.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+.Cart.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+
+/*Note Section Design */
+.Note{
+  
+  position: absolute;
+  background-color: #fff;
+  padding: 10px 20px;
+  padding-left: 0;
+  width: 320px;
+  top: 50px;
+  right: 0;
+  box-shadow: 0px 0px 2px black;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.Note::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transform: rotate(45deg);
+}
+.Note.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+.Note.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.userProfile{
+position: absolute;
+background-color: #fff;
+padding: 10px 20px;
+padding-left: 0;
+width: 280px;
+top: 55px;
+right: 0;
+box-shadow: 0px 0px 2px black;
+padding-left: 10px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+text-align: center;
+}
+.userProfile.active{
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+transition: 0.5s ease;
+}
+.userProfile.inactive{
+opacity: 0;
+visibility: hidden;
+transform: translateY(-20px);
+transition: 0.3s ease;
+}
